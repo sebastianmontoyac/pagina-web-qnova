@@ -142,6 +142,33 @@ ul.slider li:target{
     width: 300px;
     
 } */
+
+.grid{
+    place-items: center;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows:1fr 1fr 1fr ;
+    grid-template-areas: "a a"
+                         "b c"
+                         "d e";
+}
+
+.a{
+    grid-area:a;
+}
+.b{
+    grid-area:b;
+}
+.c{
+    grid-area:c;
+}
+.d{
+    grid-area:d;
+}
+.e{
+    grid-area:e;
+}
+    
 footer{
     background-color:var(--primary-color7);
     color: var(--primary-color2);
