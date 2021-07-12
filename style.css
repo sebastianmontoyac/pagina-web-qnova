@@ -1,3 +1,4 @@
+
 *{
     box-sizing: border-box;
 margin: 0;
@@ -59,7 +60,8 @@ a{
     width: 100vw;
 }
 .main__h1{
-padding: 66px 0 0 0;
+
+padding: 13px 0px 25px 0;
 text-align: center;
 width: 100vw;
 }
@@ -79,7 +81,7 @@ ul, li{
 
 
 ul.slider{
-    position: relative;
+   position: relative;
     width: 320px;
     height: 300px;
 }
@@ -144,31 +146,89 @@ ul.slider li:target{
 } */
 
 .grid{
+    margin-top: 70px;
+    width: 100vw;
+    height: 40vh;
     place-items: center;
     display:grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows:1fr 1fr 1fr ;
     grid-template-areas: "a a"
                          "b c"
                          "d e";
+    text-align: center;
+    gap:4%;
+    justify-content: space-around;
 }
 
 .a{
     grid-area:a;
 }
 .b{
+   
+    background-image: url(./imagenes/facilitamos-tu-experiencia-v2.webp);
     grid-area:b;
+    width: 100%;
+    
+    background-repeat: no-repeat;
 }
 .c{
+    background-image: url(./imagenes/todo-en-un-solo-lugar-v2.webp);
     grid-area:c;
+    width: 100%;
+    
+        background-repeat: no-repeat;
 }
 .d{
+    background-image: url(./imagenes/reportes-y-estados-digitales-v2.webp);
     grid-area:d;
+    width: 100%;
+    
+        background-repeat: no-repeat;
 }
 .e{
+    background-image: url(./imagenes/servicio-a-domicilio.webp);
     grid-area:e;
+    width: 100%;
+   
+    background-repeat: no-repeat;
 }
+.grid__titulo{
+    font-size: 1.2rem;
+    text-shadow: -2px -2px 5px rgb(0, 0, 0);
+    color:var(--primary-color10) ;
+}
+.grid__parrafo{
+    font-size: 1rem;
+    color: var(--primary-color1);
+    text-shadow: 1px -1px 1px rgb(255 255 255);
+   }
+
+.grid__boton{
+    position: relative;
+    top:1.8rem;
+    width: 10rem;
+    border-radius: 10px;
+    background-color: var(--primary-color6);
+    color: var(--primary-color10);
+}
+.a,.main__h1{
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+.grid__titulo{
+    font-size: 1.8rem;
+    font-weight: 300;
+}
+
+.grid__parrafo{
+    font-size: 1.1rem;
+    font-weight: 200;
+}
+.grid__boton{
+    font-size: 1.2rem;
+    font-weight: 200;
     
+}
 footer{
     background-color:var(--primary-color7);
     color: var(--primary-color2);
