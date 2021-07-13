@@ -10,10 +10,6 @@ html {
     font-size: 62.5%;
 width: 100%;
 }
-body {
-    font-size: 1.6rem;
-    ;
-}
 
 :root{
     --primary-color1: #0B090A;
@@ -64,7 +60,7 @@ a{
     width: 100vw;
 }
 .main__h1{
- margin-top: 19px;
+ margin-top: 58px;
 padding: 13px 0px 25px 0;
 text-align: center;
 width: 100vw;
@@ -120,7 +116,9 @@ ul.slider li:target{
 .menu{
     text-align: center;
     margin: 20px;
+    
 }
+
 
 .menu li{
     display: inline-block;
@@ -133,7 +131,7 @@ ul.slider li:target{
     background-color: grey;
     width: 20px;
     height: 24px;
-    font-size: 2.0rem;
+    font-size: 1.3rem;
     border-radius: 100%;
 }
 
@@ -171,38 +169,36 @@ ul.slider li:target{
     background-image: url(./imagenes/facilitamos-tu-experiencia-v2.webp);
     grid-area:b;
     width: 100%;
+    height: 100%;
     background-repeat: no-repeat;
-    outline: 1rem  outset  var(--primary-color7);
     border-radius: 20px;
 }
 .c{
     background-image: url(./imagenes/todo-en-un-solo-lugar-v2.webp);
     grid-area:c;
     width: 100%;
-    
-        background-repeat: no-repeat;
+    height: 100%;
+    background-repeat: no-repeat;
 }
 .d{
     background-image: url(./imagenes/reportes-y-estados-digitales-v2.webp);
     grid-area:d;
     width: 100%;
+    height: 100%;
     
-        background-repeat: no-repeat;
 }
 .e{
     background-image: url(./imagenes/servicio-a-domicilio.webp);
     grid-area:e;
     width: 100%;
-   
+    height: 100%;
     background-repeat: no-repeat;
 }
 .grid__titulo{
-    font-size: 0.8rem;
     text-shadow: -2px -2px 5px rgb(0, 0, 0);
     color:var(--primary-color10) ;
 }
 .grid__parrafo{
-    font-size: 1rem;
     color: var(--primary-color1);
     text-shadow: 1px -1px 1px rgb(255 255 255);
    }
@@ -216,27 +212,64 @@ ul.slider li:target{
     color: var(--primary-color10);
 }
 .a,.main__h1{
-    font-size: 2rem;
-    font-weight: 500;
-    font-weight: 600;
+   font-weight: 500;
+
 }
 
 .grid__titulo{
-    font-size: 0.8rem;
+    
     font-weight: 300;
 }
 
 .grid__parrafo{
-    font-size: 0.8rem;
-    font-weight: 200;
+font-weight: 200;
 }
-.grid__boton{
-    font-size: 0.8rem;
-    font-weight: 200;
-    
+.grid__boton{   
 }
 
 footer{
     background-color:var(--primary-color7);
     color: var(--primary-color2);
+    font-size: 0.8rem;
+    }
+
+@media screen and (min-width:320px) and (max-width:947px) {
+        .b,.c,.d,.e{
+            
+        font-size: 1.3rem;}
+        
+            
+        .a, .main__h1{
+            font-size: 2.3rem;
+        }
+        .grid__boton {
+            width: 50%;
+            font-size: 0.6rem}
+        .grid__parrafo{
+        font-size:0.9rem; }
+
+        .main__h1{
+            margin-top: 134px;
+        }
+    }
+    
+    @media screen and (min-width:948px){
+        .b,.c,.d,.e{
+            
+            font-size: 2rem;}
+            
+        .a, .main__h1{
+            font-size: 2.3rem;
+        }
+        .grid__parrafo{
+            font-size:1.5rem;
+            max-width: 613px; }
+        .grid__boton {
+              font-size: 1.2rem}
+        .main-navigation{
+            font-size: 1.5rem;
+        }
+        .main-navigation img{
+            width: 30px;
+        }
     }
